@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../../images/earth.svg">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
@@ -1809,13 +1809,13 @@ Licensed under the Apache License, Version 2.0.
     }
     init_mathjax();
     </script>
-    <!-- End of mathjax configuration --><div class="jupyter-wrapper"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+    <!-- End of mathjax configuration --><div class="jupyter-wrapper"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1852,6 +1852,36 @@ from srai.regionizers import VoronoiRegionizer</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [1], line 7</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> <span class="ansi-bold" style="color: rgb(0,0,255)">plotly</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">express</span> <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> <span class="ansi-bold" style="color: rgb(0,0,255)">px</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">shapely</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">geometry</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> MultiPolygon, Point, Polygon
+<span class="ansi-green-fg">----&gt; 7</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">srai</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">regionizers</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> VoronoiRegionizer
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;srai&#39;</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -1871,7 +1901,7 @@ from srai.regionizers import VoronoiRegionizer</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1925,13 +1955,13 @@ seeds_gdf = gpd.GeoDataFrame(
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1956,14 +1986,57 @@ seeds_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;AxesSubplot: &gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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2bx5s5FkPvjgg1CfN99807hcLvPVV19FrHYb/e94GmPM+PHjzcUXX9zsYxjPtov5KyotKSsr05lnnqnu3buH2goKChQIBPTpp5+G+uTn54c9rqCgQGVlZRGt1VYzZ85USkqKBg4cqFmzZoXdNisrK9OwYcPkdrtDbQUFBaqoqNA333wTjXKt1NDQoA0bNoTNs7i4OOXn5zPPWunzzz9Xjx49lJ2drWuuuUY7duyQJG3YsEEHDx4MG9ucnBydfPLJjG0LqqqqVFNTEzZ2Pp9Pubm5obErKytTUlKSzj777FCf/Px8xcXF6b333ot4zbFgzZo1SktLU+/evTVp0iTt2bMndIzxbLuY/1LCltTU1ISFFEmh/ZqammP2CQQC+v7779W5c+fIFGuh2267TYMGDVJycrLeffddTZ8+XdXV1Zo9e7ak/45dVlZW2GN+OL5du3aNeM02+vrrr3X48OEm59lnn30WpapiR25urhYsWKDevXururpaM2bM0LnnnqtNmzappqZGbrf7qDVq3bt3D/0/jqYdGZ+m5uUP/35MS0sLO96xY0clJyczvk0oLCzUZZddpqysLG3dulV/+MMfNGrUKJWVlalDhw6M549gZVC5++679dBDDx2zz5YtW8IW06H12jK+U6dODbX1799fbrdbN998s4qLi/loaETMqFGjQj/3799fubm5yszM1IsvvnhC/0MC9vn1r38d+vnMM89U//791atXL61Zs0YjRoyIYmWxy8qgMm3aNE2YMOGYfbKzs1t1rvT09KPeWXHk3QDp6emh//7vOwRqa2vl9XqPy78Ef8r45ubm6tChQ9q2bZt69+7d7NhJ/z++kLp166YOHTo0OVaMU9slJSXp9NNPV2VlpS644AI1NDRo3759YVdVGNuWHRmf2tpaZWRkhNpra2t11llnhfr874LvQ4cOae/evYxvK2RnZ6tbt26qrKzUiBEjGM8fwco1KqmpqcrJyTnm9sM1EceSl5enTz75JGxilJaWyuv1qk+fPqE+q1atCntcaWmp8vLy2u9JWeSnjG95ebni4uJCly7z8vK0bt06HTx4MNSntLRUvXv35rbPD7jdbg0ePDhsnjU2NmrVqlXH7Txz0rfffqutW7cqIyNDgwcPVqdOncLGtqKiQjt27GBsW5CVlaX09PSwsQsEAnrvvfdCY5eXl6d9+/Zpw4YNoT6rV69WY2OjcnNzI15zrPnyyy+1Z8+eUBBkPH+EaK/m/am2b99uPvroIzNjxgzTpUsX89FHH5mPPvrI1NfXG2OMOXTokOnXr58ZOXKkKS8vNytWrDCpqalm+vTpoXN88cUXJiEhwdx5551my5YtZu7cuaZDhw5mxYoV0XpaVnj33XfNY489ZsrLy83WrVvNokWLTGpqqhk3blyoz759+0z37t3Nb37zG7Np0ybzwgsvmISEBPP0009HsXI7vfDCC8bj8ZgFCxaYzZs3m5tuuskkJSWFvSMNTZs2bZpZs2aNqaqqMv/6179Mfn6+6datm9m9e7cxxphbbrnFnHzyyWb16tXm3//+t8nLyzN5eXlRrtoO9fX1ob8XJZnZs2ebjz76yGzfvt0YY8zMmTNNUlKSefXVV83GjRvNxRdfbLKyssz3338fOkdhYaEZOHCgee+998w777xjTjvtNHPVVVdF6ylF1bHGs76+3txxxx2mrKzMVFVVmZUrV5pBgwaZ0047zRw4cCB0DsazbWI+qIwfP95IOmp76623Qn22bdtmRo0aZTp37my6detmpk2bZg4ePBh2nrfeesucddZZxu12m+zsbFNSUhLZJ2KhDRs2mNzcXOPz+Ux8fLw544wzzJ///Oew/+GMMebjjz82Q4cONR6Px5x00klm5syZUarYfnPmzDEnn3yycbvdZsiQIWb9+vXRLikmXHnllSYjI8O43W5z0kknmSuvvNJUVlaGjn///ffmt7/9renatatJSEgwl156qamuro5ixfZ46623mvw7cvz48caY/75F+d577zXdu3c3Ho/HjBgxwlRUVISdY8+ePeaqq64yXbp0MV6v11x33XWhfwyeaI41nt99950ZOXKkSU1NNZ06dTKZmZlm4sSJR/1jhPFsG5cxxkT8Mg4AAEArWLlGBQAAQCKoAAAAixFUAACAtQgqAADAWgQVAABgLYIKAACwFkEFAABYi6ACAACsRVABAADWIqgAAABrEVQAAIC1CCoAAMBa/weGj8rPBb21mwAAAABJRU5ErkJggg==
+"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -1988,14 +2061,42 @@ seeds_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [4], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> vr <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">VoronoiRegionizer</span>(seeds<span style="color: rgb(98,98,98)">=</span>seeds_gdf)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;VoronoiRegionizer&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2020,14 +2121,42 @@ seeds_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [5], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> result_gdf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">vr</span><span style="color: rgb(98,98,98)">.</span>transform()
+
+<span class="ansi-red-fg">NameError</span>: name &#39;vr&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2052,14 +2181,42 @@ seeds_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [6], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">result_gdf</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2116,6 +2273,42 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [7], line 2</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> fig <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth(
+<span class="ansi-green-fg">----&gt; 2</span>     <span class="ansi-yellow-bg">result_gdf</span>,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     geojson<span style="color: rgb(98,98,98)">=</span>result_gdf<span style="color: rgb(98,98,98)">.</span>geometry,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     locations<span style="color: rgb(98,98,98)">=</span>result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     color<span style="color: rgb(98,98,98)">=</span>result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     color_continuous_scale<span style="color: rgb(98,98,98)">=</span>px<span style="color: rgb(98,98,98)">.</span>colors<span style="color: rgb(98,98,98)">.</span>sequential<span style="color: rgb(98,98,98)">.</span>Viridis,
+<span class="ansi-green-intense-fg ansi-bold">      7</span> )
+<span class="ansi-green-intense-fg ansi-bold">      8</span> fig2 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>scatter_geo(seeds_gdf, lat<span style="color: rgb(98,98,98)">=</span>seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>y, lon<span style="color: rgb(98,98,98)">=</span>seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>x)
+<span class="ansi-green-intense-fg ansi-bold">      9</span> fig<span style="color: rgb(98,98,98)">.</span>update_traces(marker<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">opacity</span><span style="color: rgb(175,0,0)">&#34;</span>: <span style="color: rgb(98,98,98)">0.6</span>}, selector<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">dict</span>(<span style="color: rgb(0,135,0)">type</span><span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">choropleth</span><span style="color: rgb(175,0,0)">&#34;</span>))
+
+<span class="ansi-red-fg">NameError</span>: name &#39;result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -2135,7 +2328,7 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2167,13 +2360,13 @@ uk_gdf_shape = uk_gdf.iloc[0].geometry  # get the Polygon</div>
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2198,6 +2391,84 @@ uk_gdf_shape = uk_gdf.iloc[0].geometry  # get the Polygon</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geometry</th>
+      <th>bbox_north</th>
+      <th>bbox_south</th>
+      <th>bbox_east</th>
+      <th>bbox_west</th>
+      <th>place_id</th>
+      <th>osm_type</th>
+      <th>osm_id</th>
+      <th>lat</th>
+      <th>lon</th>
+      <th>display_name</th>
+      <th>class</th>
+      <th>type</th>
+      <th>importance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>MULTIPOLYGON (((-14.01552 57.60263, -14.01459 ...</td>
+      <td>61.061</td>
+      <td>49.674</td>
+      <td>2.091912</td>
+      <td>-14.015517</td>
+      <td>297944570</td>
+      <td>relation</td>
+      <td>62149</td>
+      <td>54.702354</td>
+      <td>-3.276575</td>
+      <td>United Kingdom</td>
+      <td>boundary</td>
+      <td>administrative</td>
+      <td>0.872378</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -2205,7 +2476,7 @@ uk_gdf_shape = uk_gdf.iloc[0].geometry  # get the Polygon</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2267,13 +2538,13 @@ del coords  # not used any more</div>
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2298,14 +2569,57 @@ del coords  # not used any more</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&lt;AxesSubplot: &gt;</pre>
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2330,14 +2644,42 @@ del coords  # not used any more</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [12], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> vr_uk <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">VoronoiRegionizer</span>(seeds<span style="color: rgb(98,98,98)">=</span>uk_seeds_gdf)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;VoronoiRegionizer&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2362,14 +2704,42 @@ del coords  # not used any more</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [13], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> uk_result_gdf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">vr_uk</span><span style="color: rgb(98,98,98)">.</span>transform(gdf<span style="color: rgb(98,98,98)">=</span>uk_gdf)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;vr_uk&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2394,14 +2764,42 @@ del coords  # not used any more</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [14], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">uk_result_gdf</span><span style="color: rgb(98,98,98)">.</span>head()
+
+<span class="ansi-red-fg">NameError</span>: name &#39;uk_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2468,6 +2866,42 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [15], line 2</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> fig <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth(
+<span class="ansi-green-fg">----&gt; 2</span>     <span class="ansi-yellow-bg">uk_result_gdf</span>,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     geojson<span style="color: rgb(98,98,98)">=</span>uk_result_gdf<span style="color: rgb(98,98,98)">.</span>geometry,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     locations<span style="color: rgb(98,98,98)">=</span>uk_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     color<span style="color: rgb(98,98,98)">=</span>uk_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     color_continuous_scale<span style="color: rgb(98,98,98)">=</span>px<span style="color: rgb(98,98,98)">.</span>colors<span style="color: rgb(98,98,98)">.</span>qualitative<span style="color: rgb(98,98,98)">.</span>Plotly,
+<span class="ansi-green-intense-fg ansi-bold">      7</span> )
+<span class="ansi-green-intense-fg ansi-bold">      8</span> fig2 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>scatter_geo(uk_seeds_gdf, lat<span style="color: rgb(98,98,98)">=</span>uk_seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>y, lon<span style="color: rgb(98,98,98)">=</span>uk_seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>x)
+<span class="ansi-green-intense-fg ansi-bold">      9</span> fig<span style="color: rgb(98,98,98)">.</span>update_traces(marker<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">opacity</span><span style="color: rgb(175,0,0)">&#34;</span>: <span style="color: rgb(98,98,98)">0.6</span>}, selector<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">dict</span>(<span style="color: rgb(0,135,0)">type</span><span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">choropleth</span><span style="color: rgb(175,0,0)">&#34;</span>))
+
+<span class="ansi-red-fg">NameError</span>: name &#39;uk_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -2481,13 +2915,13 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2514,14 +2948,137 @@ stations_csv</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>country</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>44.081790</td>
+      <td>6.001625</td>
+      <td>FR</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>44.061565</td>
+      <td>5.997373</td>
+      <td>FR</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>44.063863</td>
+      <td>6.011248</td>
+      <td>FR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>44.350000</td>
+      <td>6.350000</td>
+      <td>FR</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>44.088710</td>
+      <td>6.222982</td>
+      <td>FR</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>68062</th>
+      <td>49.406799</td>
+      <td>8.556337</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>68063</th>
+      <td>50.639481</td>
+      <td>10.857917</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>68064</th>
+      <td>53.112288</td>
+      <td>13.575788</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>68065</th>
+      <td>53.118391</td>
+      <td>13.578125</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>68066</th>
+      <td>49.575797</td>
+      <td>8.656360</td>
+      <td>DE</td>
+    </tr>
+  </tbody>
+</table>
+<p>63924 rows × 3 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2578,14 +3135,86 @@ stations_gdf.head()</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geometry</th>
+    </tr>
+    <tr>
+      <th>id</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6691</th>
+      <td>POINT (9.03081 51.73032)</td>
+    </tr>
+    <tr>
+      <th>6692</th>
+      <td>POINT (11.80785 49.09284)</td>
+    </tr>
+    <tr>
+      <th>6693</th>
+      <td>POINT (10.48471 53.14212)</td>
+    </tr>
+    <tr>
+      <th>6695</th>
+      <td>POINT (6.59351 50.44187)</td>
+    </tr>
+    <tr>
+      <th>6696</th>
+      <td>POINT (8.31165 49.93009)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2610,14 +3239,42 @@ stations_gdf.head()</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [18], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> vr_rail <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">VoronoiRegionizer</span>(seeds<span style="color: rgb(98,98,98)">=</span>stations_gdf, allow_multiprocessing<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">True</span>)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;VoronoiRegionizer&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2642,14 +3299,42 @@ stations_gdf.head()</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [19], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> rail_result_gdf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">vr_rail</span><span style="color: rgb(98,98,98)">.</span>transform()
+
+<span class="ansi-red-fg">NameError</span>: name &#39;vr_rail&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2726,14 +3411,53 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [20], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># Germany</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> fig <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth(
+<span class="ansi-green-fg">----&gt; 3</span>     <span class="ansi-yellow-bg">rail_result_gdf</span>,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     geojson<span style="color: rgb(98,98,98)">=</span>rail_result_gdf<span style="color: rgb(98,98,98)">.</span>geometry,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     locations<span style="color: rgb(98,98,98)">=</span>rail_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     color<span style="color: rgb(98,98,98)">=</span>rail_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      7</span>     color_continuous_scale<span style="color: rgb(98,98,98)">=</span>px<span style="color: rgb(98,98,98)">.</span>colors<span style="color: rgb(98,98,98)">.</span>sequential<span style="color: rgb(98,98,98)">.</span>Viridis,
+<span class="ansi-green-intense-fg ansi-bold">      8</span> )
+<span class="ansi-green-intense-fg ansi-bold">      9</span> fig2 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>scatter_geo(
+<span class="ansi-green-intense-fg ansi-bold">     10</span>     stations_gdf, lat<span style="color: rgb(98,98,98)">=</span>stations_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>y, lon<span style="color: rgb(98,98,98)">=</span>stations_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>x
+<span class="ansi-green-intense-fg ansi-bold">     11</span> )
+<span class="ansi-green-intense-fg ansi-bold">     12</span> fig<span style="color: rgb(98,98,98)">.</span>update_traces(marker<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">opacity</span><span style="color: rgb(175,0,0)">&#34;</span>: <span style="color: rgb(98,98,98)">0.6</span>}, selector<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(0,135,0)">dict</span>(<span style="color: rgb(0,135,0)">type</span><span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">choropleth</span><span style="color: rgb(175,0,0)">&#34;</span>))
+
+<span class="ansi-red-fg">NameError</span>: name &#39;rail_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2796,6 +3520,47 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [21], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># Berlin</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> fig <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth_mapbox(
+<span class="ansi-green-fg">----&gt; 3</span>     <span class="ansi-yellow-bg">rail_result_gdf</span>,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     geojson<span style="color: rgb(98,98,98)">=</span>rail_result_gdf,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     color<span style="color: rgb(98,98,98)">=</span>rail_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     locations<span style="color: rgb(98,98,98)">=</span>rail_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      7</span>     center<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">lat</span><span style="color: rgb(175,0,0)">&#34;</span>: <span style="color: rgb(98,98,98)">52.51637</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">lon</span><span style="color: rgb(175,0,0)">&#34;</span>: <span style="color: rgb(98,98,98)">13.40665</span>},
+<span class="ansi-green-intense-fg ansi-bold">      8</span>     mapbox_style<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">open-street-map</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-intense-fg ansi-bold">      9</span>     zoom<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">11</span>,
+<span class="ansi-green-intense-fg ansi-bold">     10</span> )
+<span class="ansi-green-intense-fg ansi-bold">     11</span> fig2 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>scatter_mapbox(
+<span class="ansi-green-intense-fg ansi-bold">     12</span>     stations_gdf, lat<span style="color: rgb(98,98,98)">=</span>stations_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>y, lon<span style="color: rgb(98,98,98)">=</span>stations_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>x
+<span class="ansi-green-intense-fg ansi-bold">     13</span> )
+<span class="ansi-green-intense-fg ansi-bold">     14</span> fig<span style="color: rgb(98,98,98)">.</span>add_trace(fig2<span style="color: rgb(98,98,98)">.</span>data[<span style="color: rgb(98,98,98)">0</span>])
+
+<span class="ansi-red-fg">NameError</span>: name &#39;rail_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
@@ -2816,7 +3581,7 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2868,7 +3633,7 @@ from plotly.subplots import make_subplots</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2906,7 +3671,7 @@ pl_gdf_shape = pl_gdf.iloc[0].geometry  # get the Polygon</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2974,7 +3739,7 @@ del coords</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3010,7 +3775,7 @@ del coords</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3058,13 +3823,13 @@ pl_regions_2d_gdf = gpd.GeoDataFrame(
 </div>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3089,14 +3854,107 @@ pl_regions_2d_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>POLYGON ((19.96263 53.82926, 19.89414 53.63766...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>POLYGON ((16.04133 51.90376, 16.10702 51.84701...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>POLYGON ((15.11104 53.40670, 14.80751 52.52369...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>POLYGON ((15.67351 52.78972, 14.80751 52.52369...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>POLYGON ((14.36895 53.43041, 14.36874 53.43205...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>POLYGON ((20.68130 51.26463, 20.63541 51.31161...</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>POLYGON ((20.89664 49.75616, 21.37243 50.93480...</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>POLYGON ((20.40917 50.55262, 19.60575 50.61913...</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>POLYGON ((20.56626 49.37904, 20.56577 49.37911...</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>POLYGON ((21.37052 49.86504, 21.98432 49.45695...</td>
+    </tr>
+  </tbody>
+</table>
+<p>61 rows × 1 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3121,14 +3979,42 @@ pl_regions_2d_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [28], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> vr_pl <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">VoronoiRegionizer</span>(seeds<span style="color: rgb(98,98,98)">=</span>pl_seeds_gdf)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;VoronoiRegionizer&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3153,14 +4039,42 @@ pl_regions_2d_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [29], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> pl_result_gdf <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">vr_pl</span><span style="color: rgb(98,98,98)">.</span>transform(gdf<span style="color: rgb(98,98,98)">=</span>pl_gdf)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;vr_pl&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3185,14 +4099,42 @@ pl_regions_2d_gdf = gpd.GeoDataFrame(
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [30], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> <span class="ansi-yellow-bg">pl_result_gdf</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;pl_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3343,6 +4285,47 @@ fig.show(renderer="png")  # replace with fig.show() to allow interactivity</div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [31], line 2</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> choropleth_1 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth(
+<span class="ansi-green-fg">----&gt; 2</span>     <span class="ansi-yellow-bg">pl_result_gdf</span>,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     geojson<span style="color: rgb(98,98,98)">=</span>pl_result_gdf<span style="color: rgb(98,98,98)">.</span>geometry,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>     locations<span style="color: rgb(98,98,98)">=</span>pl_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>     color<span style="color: rgb(98,98,98)">=</span>pl_result_gdf<span style="color: rgb(98,98,98)">.</span>index,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>     color_continuous_scale<span style="color: rgb(98,98,98)">=</span>px<span style="color: rgb(98,98,98)">.</span>colors<span style="color: rgb(98,98,98)">.</span>qualitative<span style="color: rgb(98,98,98)">.</span>Plotly,
+<span class="ansi-green-intense-fg ansi-bold">      7</span> )
+<span class="ansi-green-intense-fg ansi-bold">      9</span> choropleth_2 <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>choropleth(
+<span class="ansi-green-intense-fg ansi-bold">     10</span>     pl_regions_2d_gdf,
+<span class="ansi-green-intense-fg ansi-bold">     11</span>     geojson<span style="color: rgb(98,98,98)">=</span>pl_regions_2d_gdf<span style="color: rgb(98,98,98)">.</span>geometry,
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     color_continuous_scale<span style="color: rgb(98,98,98)">=</span>px<span style="color: rgb(98,98,98)">.</span>colors<span style="color: rgb(98,98,98)">.</span>qualitative<span style="color: rgb(98,98,98)">.</span>Plotly,
+<span class="ansi-green-intense-fg ansi-bold">     15</span> )
+<span class="ansi-green-intense-fg ansi-bold">     17</span> points_plot <span style="color: rgb(98,98,98)">=</span> px<span style="color: rgb(98,98,98)">.</span>scatter_geo(pl_seeds_gdf, lat<span style="color: rgb(98,98,98)">=</span>pl_seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>y, lon<span style="color: rgb(98,98,98)">=</span>pl_seeds_gdf<span style="color: rgb(98,98,98)">.</span>geometry<span style="color: rgb(98,98,98)">.</span>x)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;pl_result_gdf&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
