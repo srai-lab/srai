@@ -259,7 +259,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../examples/loaders/" class="md-tabs__link">
+      <a href="../../examples/joiners/" class="md-tabs__link">
         Examples
       </a>
     </li>
@@ -456,6 +456,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#srai.joiners.IntersectionJoiner" class="md-nav__link">
+    IntersectionJoiner
+  </a>
+  
+    <nav class="md-nav" aria-label="IntersectionJoiner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.join" class="md-nav__link">
+    join()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -533,6 +553,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -572,7 +594,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../examples/loaders/">Loaders</a>
+          <a href="../../examples/joiners/">Joiners</a>
           
             <label for="__nav_3_1">
               <span class="md-nav__icon md-icon"></span>
@@ -580,8 +602,71 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Loaders" data-md-level="2">
+      <nav class="md-nav" aria-label="Joiners" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Joiners
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/joiners/intersection_joiner/" class="md-nav__link">
+        Intersection joiner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../examples/loaders/">Loaders</a>
+          
+            <label for="__nav_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Loaders" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
           Loaders
         </label>
@@ -619,7 +704,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
       
@@ -641,14 +726,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../examples/regionizers/">Regionizers</a>
           
-            <label for="__nav_3_2">
+            <label for="__nav_3_3">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Regionizers" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Regionizers
         </label>
@@ -762,6 +847,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#srai.joiners.IntersectionJoiner" class="md-nav__link">
+    IntersectionJoiner
+  </a>
+  
+    <nav class="md-nav" aria-label="IntersectionJoiner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.join" class="md-nav__link">
+    join()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -834,7 +939,8 @@
 <span class="normal"><a href="#__codelineno-0-20">20</a></span>
 <span class="normal"><a href="#__codelineno-0-21">21</a></span>
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">class</span> <span class="nc">BaseJoiner</span><span class="p">(</span><span class="n">abc</span><span class="o">.</span><span class="n">ABC</span><span class="p">):</span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="k">class</span> <span class="nc">BaseJoiner</span><span class="p">(</span><span class="n">abc</span><span class="o">.</span><span class="n">ABC</span><span class="p">):</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="sd">&quot;&quot;&quot;Base abstract class for joiners.&quot;&quot;&quot;</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
@@ -846,10 +952,11 @@
 <a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="sd">            regions (gpd.GeoDataFrame): regions with which features are joined</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="sd">            features (gpd.GeoDataFrame): features to be joined</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">        Returns:</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">            GeoDataFrame with the joined data</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">            GeoDataFrame with an intersection of regions and features, which contains</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">            a MultiIndex and a geometry with the intersection</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>        <span class="k">raise</span> <span class="ne">NotImplementedError</span>
 </code></pre></div></td></tr></table></div>
         </details>
 
@@ -930,7 +1037,13 @@
           <td>
                 <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
           </td>
-          <td><p>GeoDataFrame with the joined data</p></td>
+          <td><p>GeoDataFrame with an intersection of regions and features, which contains</p></td>
+        </tr>
+        <tr>
+          <td>
+                <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
+          </td>
+          <td><p>a MultiIndex and a geometry with the intersection</p></td>
         </tr>
     </tbody>
   </table>
@@ -949,7 +1062,8 @@
 <span class="normal"><a href="#__codelineno-0-20">20</a></span>
 <span class="normal"><a href="#__codelineno-0-21">21</a></span>
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
-<span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">    Join features to regions.</span>
@@ -958,10 +1072,303 @@
 <a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="sd">        regions (gpd.GeoDataFrame): regions with which features are joined</span>
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="sd">        features (gpd.GeoDataFrame): features to be joined</span>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    Returns:</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">        GeoDataFrame with the joined data</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">        GeoDataFrame with an intersection of regions and features, which contains</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">        a MultiIndex and a geometry with the intersection</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="srai.joiners.IntersectionJoiner" class="doc doc-heading">
+        <code>IntersectionJoiner</code>
+
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Intersection Joiner.</p>
+<p>Intersection Joiner allows to join two GeoDataFrames and find all overlapping geometries. It
+does not apply any grouping or aggregation.</p>
+
+
+        <details class="quote">
+          <summary>Source code in <code>srai/joiners/intersection_joiner.py</code></summary>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span>
+<span class="normal"><a href="#__codelineno-0-56">56</a></span>
+<span class="normal"><a href="#__codelineno-0-57">57</a></span>
+<span class="normal"><a href="#__codelineno-0-58">58</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">class</span> <span class="nc">IntersectionJoiner</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">    Intersection Joiner.</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="sd">    Intersection Joiner allows to join two GeoDataFrames and find all overlapping geometries. It</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="sd">    does not apply any grouping or aggregation.</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>        <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">        Join features to regions.</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">        Args:</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">            regions (gpd.GeoDataFrame): regions with which features are joined</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="sd">            features (gpd.GeoDataFrame): features to be joined</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="sd">        Returns:</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="sd">            GeoDataFrame with an intersection of regions and features, which contains</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="sd">            a MultiIndex and a geometry with the intersection</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="k">if</span> <span class="s2">&quot;geometry&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">regions</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Regions must have a geometry column.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>        <span class="k">if</span> <span class="s2">&quot;geometry&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">features</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must have a geometry column.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Regions must not be empty.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must not be empty.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>        <span class="n">joined_parts</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">single</span> <span class="ow">in</span> <span class="n">features</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">geom_type</span><span class="p">):</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>            <span class="n">joined_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>                <span class="n">gpd</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>                    <span class="n">single</span><span class="p">[[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="s2">&quot;feature_id&quot;</span><span class="p">),</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>                    <span class="n">regions</span><span class="p">[[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="s2">&quot;region_id&quot;</span><span class="p">),</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>                    <span class="n">how</span><span class="o">=</span><span class="s2">&quot;intersection&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>                    <span class="n">keep_geom_type</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>                <span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s2">&quot;region_id&quot;</span><span class="p">,</span> <span class="s2">&quot;feature_id&quot;</span><span class="p">])</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>            <span class="p">)</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>        <span class="n">joint</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">joined_parts</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>        <span class="k">return</span> <span class="n">joint</span>
+</code></pre></div></td></tr></table></div>
+        </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="srai.joiners.intersection_joiner.IntersectionJoiner.join" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">join</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Join features to regions.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>regions</code></td>
+          <td>
+                <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
+          </td>
+          <td><p>regions with which features are joined</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>features</code></td>
+          <td>
+                <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
+          </td>
+          <td><p>features to be joined</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
+          </td>
+          <td><p>GeoDataFrame with an intersection of regions and features, which contains</p></td>
+        </tr>
+        <tr>
+          <td>
+                <code><span title="geopandas">gpd</span>.<span title="geopandas.GeoDataFrame">GeoDataFrame</span></code>
+          </td>
+          <td><p>a MultiIndex and a geometry with the intersection</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>srai/joiners/intersection_joiner.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span>
+<span class="normal"><a href="#__codelineno-0-56">56</a></span>
+<span class="normal"><a href="#__codelineno-0-57">57</a></span>
+<span class="normal"><a href="#__codelineno-0-58">58</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">    Join features to regions.</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="sd">    Args:</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="sd">        regions (gpd.GeoDataFrame): regions with which features are joined</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="sd">        features (gpd.GeoDataFrame): features to be joined</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="sd">    Returns:</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="sd">        GeoDataFrame with an intersection of regions and features, which contains</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="sd">        a MultiIndex and a geometry with the intersection</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="k">if</span> <span class="s2">&quot;geometry&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">regions</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Regions must have a geometry column.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="k">if</span> <span class="s2">&quot;geometry&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">features</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must have a geometry column.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">regions</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Regions must not be empty.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Features must not be empty.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="n">joined_parts</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">single</span> <span class="ow">in</span> <span class="n">features</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">geom_type</span><span class="p">):</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="n">joined_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>            <span class="n">gpd</span><span class="o">.</span><span class="n">overlay</span><span class="p">(</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>                <span class="n">single</span><span class="p">[[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="s2">&quot;feature_id&quot;</span><span class="p">),</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>                <span class="n">regions</span><span class="p">[[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">names</span><span class="o">=</span><span class="s2">&quot;region_id&quot;</span><span class="p">),</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>                <span class="n">how</span><span class="o">=</span><span class="s2">&quot;intersection&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>                <span class="n">keep_geom_type</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>            <span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s2">&quot;region_id&quot;</span><span class="p">,</span> <span class="s2">&quot;feature_id&quot;</span><span class="p">])</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>        <span class="p">)</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="n">joint</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">joined_parts</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>    <span class="k">return</span> <span class="n">joint</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
