@@ -138,3 +138,6 @@ dmypy.json
 
 # osmnx
 cache/
+
+# pyenv
+.python-version

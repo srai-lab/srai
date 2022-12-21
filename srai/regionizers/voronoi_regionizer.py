@@ -2,7 +2,6 @@
 Voronoi Regionizer.
 
 This module contains voronoi regionizer implementation.
-
 """
 
 from typing import Optional
@@ -25,7 +24,6 @@ class VoronoiRegionizer:
     References:
         [1] https://en.wikipedia.org/wiki/Voronoi_diagram
         [2] https://docs.scipy.org/doc/scipy-1.9.2/reference/generated/scipy.spatial.SphericalVoronoi.html
-
     """  # noqa: W505, E501
 
     def __init__(
@@ -53,7 +51,6 @@ class VoronoiRegionizer:
             ValueError: If any seed is duplicated.
             ValueError: If less than 4 seeds are provided.
             ValueError: If provided seeds geodataframe has no crs defined.
-
         """
         seeds_wgs84 = seeds.to_crs(epsg=4326)
         self.region_ids = []
@@ -92,7 +89,6 @@ class VoronoiRegionizer:
         Raises:
             ValueError: If provided geodataframe has no crs defined.
             ValueError: If seeds are laying on a single arc.
-
         """
         if gdf is None:
             gdf = gpd.GeoDataFrame(
