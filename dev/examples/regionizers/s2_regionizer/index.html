@@ -796,6 +796,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#define-s2-resolution" class="md-nav__link">
+    Define S2 resolution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#regionize-using-s2-wihtout-buffer" class="md-nav__link">
     Regionize using S2 wihtout buffer
   </a>
@@ -874,6 +881,13 @@
         <li class="md-nav__item">
   <a href="#define-starting-polygons" class="md-nav__link">
     Define starting polygons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-s2-resolution" class="md-nav__link">
+    Define S2 resolution
   </a>
   
 </li>
@@ -2043,7 +2057,6 @@ from srai.regionizers import S2Regionizer</div>
     <span class="p">],</span>
     <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;epsg:4326&quot;</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="n">resolution</span> <span class="o">=</span> <span class="mi">11</span>
 <span class="n">gdf</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">gdf = gpd.GeoDataFrame(
@@ -2069,7 +2082,6 @@ from srai.regionizers import S2Regionizer</div>
     ],
     crs="epsg:4326",
 )
-resolution = 11
 gdf.plot()</div>
     
         </div>
@@ -2129,13 +2141,12 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="regionize-using-s2-wihtout-buffer">Regionize using S2 wihtout buffer<a class="anchor-link" href="#regionize-using-s2-wihtout-buffer">&#182;</a></h2><p>All cells are fully contained in the original polygon.</p>
-
+<h2 id="define-s2-resolution">Define S2 resolution<a class="anchor-link" href="#define-s2-resolution">&#182;</a></h2>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2155,6 +2166,50 @@ class="
                 </div>
             </clipboard-copy>
         </div>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">resolution</span> <span class="o">=</span> <span class="mi">11</span>
+</pre></div>
+<div id="cell-3" class="clipboard-copy-txt">resolution = 11</div>
+    
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="regionize-using-s2-wihtout-buffer">Regionize using S2 wihtout buffer<a class="anchor-link" href="#regionize-using-s2-wihtout-buffer">&#182;</a></h2><p>All cells are fully contained in the original polygon.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+        <div class="zeroclipboard-container">
+            <clipboard-copy for="cell-4">
+            <div>
+                <span class="notice" hidden>Copied!</span>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
+                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
+                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+                </svg>
+                </div>
+            </clipboard-copy>
+        </div>
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">regionizer</span> <span class="o">=</span> <span class="n">S2Regionizer</span><span class="p">(</span><span class="n">resolution</span><span class="p">,</span> <span class="n">buffer</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">gdf_s2</span> <span class="o">=</span> <span class="n">regionizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span>
 
@@ -2162,7 +2217,7 @@ class="
 <span class="n">gdf_s2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">regionizer = S2Regionizer(resolution, buffer=False)
+<div id="cell-4" class="clipboard-copy-txt">regionizer = S2Regionizer(resolution, buffer=False)
 gdf_s2 = regionizer.transform(gdf)
 
 ax = gdf.plot()
@@ -2223,12 +2278,12 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
         <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-4">
+            <clipboard-copy for="cell-5">
             <div>
                 <span class="notice" hidden>Copied!</span>
                 <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
@@ -2245,7 +2300,7 @@ class="
 <span class="n">gdf_s2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
-<div id="cell-4" class="clipboard-copy-txt">regionizer = S2Regionizer(resolution, buffer=True)
+<div id="cell-5" class="clipboard-copy-txt">regionizer = S2Regionizer(resolution, buffer=True)
 gdf_s2 = regionizer.transform(gdf)
 
 ax = gdf.plot()
