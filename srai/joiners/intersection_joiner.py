@@ -16,7 +16,7 @@ class IntersectionJoiner:
     does not apply any grouping or aggregation.
     """
 
-    def join(
+    def transform(
         self, regions: gpd.GeoDataFrame, features: gpd.GeoDataFrame, return_geom: bool = True
     ) -> gpd.GeoDataFrame:
         """
