@@ -2133,7 +2133,7 @@ class="
             <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">srai.joiners</span> <span class="kn">import</span> <span class="n">IntersectionJoiner</span>
 
 <span class="n">joiner</span> <span class="o">=</span> <span class="n">IntersectionJoiner</span><span class="p">()</span>
-<span class="n">joint</span> <span class="o">=</span> <span class="n">joiner</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span>
+<span class="n">joint</span> <span class="o">=</span> <span class="n">joiner</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">joint</span><span class="p">)</span>
 
@@ -2146,7 +2146,7 @@ class="
 <div id="cell-3" class="clipboard-copy-txt">from srai.joiners import IntersectionJoiner
 
 joiner = IntersectionJoiner()
-joint = joiner.join(regions, features)
+joint = joiner.transform(regions, features)
 
 print(joint)
 
@@ -2325,7 +2325,7 @@ Thanks for your feedback! Help us improve this page by using our <a href="https:
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 - 2022 SRAI Lab – <a href="#__consent">Change cookie settings</a>
+      Copyright &copy; 2022 - 2023 SRAI Lab – <a href="#__consent">Change cookie settings</a>
 
     </div>
   

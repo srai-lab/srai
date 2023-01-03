@@ -445,8 +445,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.joiners.base.BaseJoiner.join" class="md-nav__link">
-    join()
+  <a href="#srai.joiners.base.BaseJoiner.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -465,8 +465,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.join" class="md-nav__link">
-    join()
+  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -905,8 +905,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.joiners.base.BaseJoiner.join" class="md-nav__link">
-    join()
+  <a href="#srai.joiners.base.BaseJoiner.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -925,8 +925,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.join" class="md-nav__link">
-    join()
+  <a href="#srai.joiners.intersection_joiner.IntersectionJoiner.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -1013,7 +1013,7 @@
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="sd">&quot;&quot;&quot;Base abstract class for joiners.&quot;&quot;&quot;</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>        <span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">        Join features to regions.</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15"></a>
@@ -1045,8 +1045,8 @@
 
 
 
-<h3 id="srai.joiners.base.BaseJoiner.join" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">join</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span></code>
+<h3 id="srai.joiners.base.BaseJoiner.transform" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">transform</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
@@ -1133,7 +1133,7 @@
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
 <span class="normal"><a href="#__codelineno-0-23">23</a></span>
 <span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">    Join features to regions.</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15"></a>
@@ -1289,7 +1289,7 @@ does not apply any grouping or aggregation.</p>
 <a id="__codelineno-0-18" name="__codelineno-0-18"></a>
 <a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="k">def</span> <span class="nf">join</span><span class="p">(</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">return_geom</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a>        <span class="sd">&quot;&quot;&quot;</span>
@@ -1399,8 +1399,8 @@ does not apply any grouping or aggregation.</p>
 
 
 
-<h3 id="srai.joiners.intersection_joiner.IntersectionJoiner.join" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">join</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">return_geom</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+<h3 id="srai.joiners.intersection_joiner.IntersectionJoiner.transform" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">transform</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">return_geom</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 </h3>
 
@@ -1515,7 +1515,7 @@ does not apply any grouping or aggregation.</p>
 <span class="normal"><a href="#__codelineno-0-53">53</a></span>
 <span class="normal"><a href="#__codelineno-0-54">54</a></span>
 <span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="k">def</span> <span class="nf">join</span><span class="p">(</span>
+<span class="normal"><a href="#__codelineno-0-56">56</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="bp">self</span><span class="p">,</span> <span class="n">regions</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">features</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span> <span class="n">return_geom</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
 <a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="sd">&quot;&quot;&quot;</span>
@@ -1683,7 +1683,7 @@ Thanks for your feedback! Help us improve this page by using our <a href="https:
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 - 2022 SRAI Lab – <a href="#__consent">Change cookie settings</a>
+      Copyright &copy; 2022 - 2023 SRAI Lab – <a href="#__consent">Change cookie settings</a>
 
     </div>
   

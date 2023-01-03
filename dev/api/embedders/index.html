@@ -431,8 +431,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.embedders.base.BaseEmbedder.embed" class="md-nav__link">
-    embed()
+  <a href="#srai.embedders.base.BaseEmbedder.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -458,8 +458,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#srai.embedders.count_embedder.CountEmbedder.embed" class="md-nav__link">
-    embed()
+  <a href="#srai.embedders.count_embedder.CountEmbedder.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -912,8 +912,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#srai.embedders.base.BaseEmbedder.embed" class="md-nav__link">
-    embed()
+  <a href="#srai.embedders.base.BaseEmbedder.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -939,8 +939,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#srai.embedders.count_embedder.CountEmbedder.embed" class="md-nav__link">
-    embed()
+  <a href="#srai.embedders.count_embedder.CountEmbedder.transform" class="md-nav__link">
+    transform()
   </a>
   
 </li>
@@ -1026,7 +1026,7 @@
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>    <span class="sd">&quot;&quot;&quot;Base abstract class for embedders.&quot;&quot;&quot;</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a>    <span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">def</span> <span class="nf">embed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>        <span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">        Embed a given GeoDataFrame.</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15"></a>
@@ -1057,8 +1057,8 @@
 
 
 
-<h3 id="srai.embedders.base.BaseEmbedder.embed" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">embed</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span></code>
+<h3 id="srai.embedders.base.BaseEmbedder.transform" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">transform</span><span class="p">(</span><span class="n">gdf</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
@@ -1128,7 +1128,7 @@
 <span class="normal"><a href="#__codelineno-0-21">21</a></span>
 <span class="normal"><a href="#__codelineno-0-22">22</a></span>
 <span class="normal"><a href="#__codelineno-0-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="nd">@abc</span><span class="o">.</span><span class="n">abstractmethod</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">def</span> <span class="nf">embed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">:</span>
 <a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="sd">    Embed a given GeoDataFrame.</span>
 <a id="__codelineno-0-15" name="__codelineno-0-15"></a>
@@ -1324,7 +1324,7 @@
 <a id="__codelineno-0-29" name="__codelineno-0-29"></a>        <span class="k">else</span><span class="p">:</span>
 <a id="__codelineno-0-30" name="__codelineno-0-30"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">expected_output_features</span> <span class="o">=</span> <span class="kc">None</span>
 <a id="__codelineno-0-31" name="__codelineno-0-31"></a>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="k">def</span> <span class="nf">embed</span><span class="p">(</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span>
 <a id="__codelineno-0-33" name="__codelineno-0-33"></a>        <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-0-34" name="__codelineno-0-34"></a>        <span class="n">regions_gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span>
 <a id="__codelineno-0-35" name="__codelineno-0-35"></a>        <span class="n">features_gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span>
@@ -1535,8 +1535,8 @@ The resulting columns are sorted accordingly. Defaults to None.</p></td>
 
 
 
-<h3 id="srai.embedders.count_embedder.CountEmbedder.embed" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">embed</span><span class="p">(</span><span class="n">regions_gdf</span><span class="p">,</span> <span class="n">features_gdf</span><span class="p">,</span> <span class="n">joint_gdf</span><span class="p">)</span></code>
+<h3 id="srai.embedders.count_embedder.CountEmbedder.transform" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">transform</span><span class="p">(</span><span class="n">regions_gdf</span><span class="p">,</span> <span class="n">features_gdf</span><span class="p">,</span> <span class="n">joint_gdf</span><span class="p">)</span></code>
 
 </h3>
 
@@ -1707,7 +1707,7 @@ The rows will hold numbers of this type of feature in each region.</p>
 <span class="normal"><a href="#__codelineno-0-84">84</a></span>
 <span class="normal"><a href="#__codelineno-0-85">85</a></span>
 <span class="normal"><a href="#__codelineno-0-86">86</a></span>
-<span class="normal"><a href="#__codelineno-0-87">87</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="k">def</span> <span class="nf">embed</span><span class="p">(</span>
+<span class="normal"><a href="#__codelineno-0-87">87</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="k">def</span> <span class="nf">transform</span><span class="p">(</span>
 <a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="bp">self</span><span class="p">,</span>
 <a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="n">regions_gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span>
 <a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="n">features_gdf</span><span class="p">:</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">,</span>
@@ -1895,7 +1895,7 @@ Thanks for your feedback! Help us improve this page by using our <a href="https:
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2022 - 2022 SRAI Lab – <a href="#__consent">Change cookie settings</a>
+      Copyright &copy; 2022 - 2023 SRAI Lab – <a href="#__consent">Change cookie settings</a>
 
     </div>
   
