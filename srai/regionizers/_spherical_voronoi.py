@@ -68,7 +68,8 @@ class SphereEllipsoid(Ellipsoid):  # type: ignore
         Required for spherical voronoi algorithm.
 
         References:
-            [1] https://github.com/geospace-code/pymap3d
+            1. https://github.com/geospace-code/pymap3d
+
         """
         self.semimajor_axis = 1
         self.semiminor_axis = 1

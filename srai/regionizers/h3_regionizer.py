@@ -8,8 +8,9 @@ Note:
     It may be beneficial to try the NumPy API for computationally-heavy work.
 
 References:
-    [1] https://uber.github.io/h3-py/
-    [2] https://uber.github.io/h3-py/api_comparison
+    1. https://uber.github.io/h3-py/
+    2. https://uber.github.io/h3-py/api_comparison
+
 """
 
 from typing import List
@@ -43,7 +44,8 @@ class H3Regionizer(BaseRegionizer):
             ValueError: If resolution is not between 0 and 15.
 
         References:
-            [1] https://h3geo.org/docs/core-library/restable/
+            1. https://h3geo.org/docs/core-library/restable/
+
         """
         if not (0 <= resolution <= 15):
             raise ValueError(f"Resolution {resolution} is not between 0 and 15.")
@@ -177,7 +179,8 @@ class H3Regionizer(BaseRegionizer):
             gpd.GeoDataFrame: Geometries buffered around the edges.
 
         References:
-            [1] https://h3geo.org/docs/core-library/restable/#hexagon-min-and-max-areas
+            1. https://h3geo.org/docs/core-library/restable/#hexagon-min-and-max-areas
+
         """
         return gpd.GeoDataFrame(
             geometry=(
