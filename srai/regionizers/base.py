@@ -20,6 +20,5 @@ class BaseRegionizer(abc.ABC):
 
         Returns:
             GeoDataFrame with the regionized data.
-
         """
         raise NotImplementedError

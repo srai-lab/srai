@@ -2,7 +2,6 @@
 Administrative Boundary Regionizer.
 
 This module contains administrative boundary regionizer implementation.
-
 """
 
 from typing import TYPE_CHECKING
@@ -38,7 +37,6 @@ class AdministrativeBoundaryRegionizer:
 
     References:
         1. https://wiki.openstreetmap.org/wiki/Key:admin_level
-
     """
 
     def __init__(
@@ -74,7 +72,6 @@ class AdministrativeBoundaryRegionizer:
         References:
             1. https://wiki.openstreetmap.org/wiki/Tag:boundary=administrative#10_admin_level_values_for_specific_countries
             2. https://taginfo.openstreetmap.org/keys/admin_level#values
-
         """  # noqa: W505, E501
         import_optional_dependencies(
             dependency_group="osm",
@@ -134,7 +131,6 @@ class AdministrativeBoundaryRegionizer:
             2. https://github.com/mocnik-science/osm-python-tools
             3. https://github.com/gboeing/osmnx
             4. https://github.com/mattijn/topojson
-
         """
         gdf_wgs84 = gdf.to_crs(epsg=4326)
 
